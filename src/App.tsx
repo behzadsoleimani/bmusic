@@ -2,6 +2,8 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import Home from "./pages/Home";
+import Album from "./pages/Album";
+import Search from "./pages/Search";
 import Navbar from "./components/NavBar";
 import Player from "./components/Player";
 import { AppStateValue } from "./context/state";
@@ -71,7 +73,9 @@ export default function App() {
 
       <div className="min-h-[calc(100vh-144px)]">
         <Routes>
-          <Route index element={<Home />} />
+        <Route index element={<Home />} />
+        <Route path="album/:id" element={<Album />} />
+          <Route path="search" element={<Search />} />
         </Routes>
       </div>
 
