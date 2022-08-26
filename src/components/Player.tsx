@@ -131,7 +131,7 @@ const Player: FC = () => {
           )}
         </div>
         <div className="flex-1 flex flex-col justify-center items-center">
-          <div className="flex justify-center items-center gap-5">
+          <div className="flex justify-center items-center gap-7">
             <button
               data-tooltips={isLoop ? "Disable repeat" : "Enable repeat"}
               onClick={() => setIsLoop(!isLoop)}
