@@ -3,7 +3,10 @@ import { useEffect, useState } from "react";
 
 import Home from "./pages/Home";
 import Album from "./pages/Album";
+import Playlist from "./pages/Playlist";
 import Search from "./pages/Search";
+import Artist from "./pages/Artist";
+import Category from "./pages/Category";
 import Navbar from "./components/NavBar";
 import Player from "./components/Player";
 import { AppStateValue } from "./context/state";
@@ -73,8 +76,11 @@ export default function App() {
 
       <div className="min-h-[calc(100vh-144px)]">
         <Routes>
-        <Route index element={<Home />} />
-        <Route path="album/:id" element={<Album />} />
+          <Route index element={<Home />} />
+          <Route path="album/:id" element={<Album />} />
+          <Route path="playlist/:id" element={<Playlist />} />
+          <Route path="category/:id" element={<Category />} />
+          <Route path="artist/:id" element={<Artist />} />
           <Route path="search" element={<Search />} />
         </Routes>
       </div>
