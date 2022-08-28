@@ -1,4 +1,7 @@
+### `Demo:`
 
+
+[BMusic](https://bmusic.netlify.app/)
 
 # Getting Started with Create React App
 
@@ -6,6 +9,7 @@ This project is a music player based on spotify api bootstrapped with React Js a
 
 
 Firstly, these variables should be set in an .env file:
+
 REACT_APP_SPOTIFY_CLIENT_ID
 REACT_APP_SPOTIFY_CLIENT_SECRET
 ## Available Scripts
